@@ -22,7 +22,6 @@ namespace Exercicio_4
 
             List<Aluno> alunosList = new List<Aluno>();
 
-            //Estrutura de repetição Foreach não se adequa para o caso
             for (int index = 1; index <= quantidadeAlunos; index++)
             {
                 decimal nota = -1;
@@ -35,9 +34,9 @@ namespace Exercicio_4
                 }
 
                 alunosList.Add(new Aluno { Id = index, Nota = nota });
-
-                index++;
             }
+
+            Console.Clear();
 
             foreach (Aluno aluno in alunosList)
             {
